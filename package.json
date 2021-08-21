@@ -1,0 +1,14 @@
+{
+  "name": "form_validaor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass -w scss/main.scss:dist/css/main.css"
+  },
+  "author": "Apu",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4"
+  }
+}
