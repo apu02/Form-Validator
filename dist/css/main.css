@@ -18,7 +18,7 @@ body {
 
 .form-container {
   max-width: 350px;
-  margin: 100px auto 0;
+  margin: 65px auto 0;
   padding: 0 2.3rem;
   background: #ebebeb;
   border-radius: 5px;
@@ -46,14 +46,13 @@ hr {
 }
 
 .personal-info {
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 0;
 }
 .personal-info .input-group {
   display: flex;
   align-items: center;
-}
-.personal-info .input-group:not(:last-child) {
-  margin-bottom: 1.3rem;
+  position: relative;
+  margin-bottom: 2.5rem;
 }
 .personal-info .input-group .icon {
   background: lightblue;
@@ -68,6 +67,24 @@ hr {
   border-left: none;
   border-radius: 0 5px 5px 0;
   outline: none;
+}
+.personal-info .input-group small {
+  display: none;
+}
+
+.input-group.error small {
+  display: block;
+  position: absolute;
+  top: 28px;
+  margin-left: 0.7rem;
+  color: #c74c3c;
+}
+.input-group.error input {
+  border-color: #c74c3c;
+}
+
+.input-group.success input {
+  border-color: #2ecc71;
 }
 
 .gender {
